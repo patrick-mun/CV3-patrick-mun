@@ -1,0 +1,219 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    background-color: #89a6c5; /* Couleur d'en-tête bleue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 150px;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 1px 5px 15px #6C757D;
+}
+.header-content h1{
+    margin-top: 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Pas de retour à la ligne pour les éléments flex */
+    min-height: 100vh; /* Hauteur minimum de 100% de la fenêtre d'affichage */
+}
+
+aside {
+    background-color: #f8f9fa; /* Couleur de fond pour la barre latérale */
+    width: 15%; /* Largeur fixe pour aside */
+    min-width: 250px; /* Largeur minimale pour aside */
+    height: 100vh; /* Hauteur totale de la fenêtre d'affichage */
+    position: fixed; /* Position fixe par rapport à la fenêtre d'affichage */
+    top: 0; /* En haut de la page */
+    left: 0; /* À gauche de la page */
+    border-top-right-radius: 200px;
+    z-index: 2;
+    box-shadow: 1px 5px 15px #6C757D;
+}
+.id{
+    height: 240px;
+    width: 95%;
+    background-color: #e9eef2;
+    z-index: 3;
+    margin-top: -270px;
+    border-top-right-radius: 200px ;
+}
+.id-photo{
+    margin-top: 100px;
+    margin-left: 5px;
+}
+nav{
+    margin-top: 50px;
+}
+nav div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav div ul li {
+    margin-bottom: 25px; /* Espacement entre les éléments de la liste */
+}
+
+nav div ul li a {
+    display: block;
+    background-color: #89a6c5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+nav div ul li a:hover, nav div ul li a.active {
+    background-color: white;
+    color: #007BFF;
+}
+
+
+main {
+    background-color: #FFFFFF; /* Couleur de fond blanche pour la section principale */
+    margin-left: 30%; /* Marge gauche égale à la largeur de l'aside */
+    margin-right: 10%; /* Marge gauche égale à la largeur de l'aside */
+    width: 90%; /* Largeur fixe pour main */
+    padding: 40px;
+    box-sizing: border-box; /* Inclure padding dans la largeur totale */
+    margin-top: 190px;
+}
+
+/* Styles pour les sous-sections */
+section {
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+section h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 3px;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+/*experience container*/
+.experience-container {
+    background-color: #f9f9f9; /* Couleur de fond légère pour la section compétences */
+    padding: 20px;
+    border-radius: 8px; /* Bords arrondis pour la section compétences */
+    margin-bottom: 10px;
+    box-shadow: 0.5px 5px 15px #e3e6e8;
+}
+
+.experience-container ul {
+    list-style-type: none; /* Supprimer les puces de la liste */
+    padding: 0;
+}
+
+.experience-container li {
+    background-color: #dfedf3; /* Couleur de fond pour chaque compétence */
+    margin-bottom: 10px;
+
+    padding: 5px;
+    border-radius: 5px; /* Bords arrondis pour les éléments de la liste */
+}
+
+.experience-container li p {
+    margin: 5px 0; /* Espacement pour les paragraphes dans les compétences */
+}
+
+.exprience-container ul li ul {
+    padding-left: 20px; /* Espace pour les sous-listes */
+}
+
+.experience-container ul li ul li p {
+    background-color: #fff; /* Couleur de fond pour les paragraphes des sous-listes */
+    padding: 5px;
+    border-left: 3px solid #0056b3; /* Ligne verticale pour la hiérarchie des compétences */
+    margin-bottom: 5px;
+}
+/*skills-container*/
+.skills-container {
+    background-color: #f9f9f9; /* Couleur de fond légère pour la section compétences */
+    padding: 20px;
+    border-radius: 8px; /* Bords arrondis pour la section compétences */
+    margin-bottom: 10px;
+    box-shadow: 0.5px 5px 15px #e3e6e8;
+}
+
+.skills-container ul {
+    list-style-type: none; /* Supprimer les puces de la liste */
+    padding: 0;
+}
+
+.skills-container li {
+    background-color: #e7e7e7; /* Couleur de fond pour chaque compétence */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px; /* Bords arrondis pour les éléments de la liste */
+}
+
+.skills-container li p {
+    margin: 5px 0; /* Espacement pour les paragraphes dans les compétences */
+}
+
+.skills-container ul li ul {
+    padding-left: 20px; /* Espace pour les sous-listes */
+}
+
+.skills-container ul li ul li p {
+    background-color: #fff; /* Couleur de fond pour les paragraphes des sous-listes */
+    padding: 5px;
+    border-left: 3px solid #0056b3; /* Ligne verticale pour la hiérarchie des compétences */
+    margin-bottom: 5px;
+}
+.fas, .fa{
+    margin-right: 5px;
+}
+
+.publication{
+    margin: 15px 50px 10px 50px;
+    border-bottom: 1px solid #b5bcc2;
+    text-align: justify;
+}
+.publication h4 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.publication p {
+    margin: 0.5em 0;
+    font-size: 14px;
+}
+.publication h4 p {
+    font-weight: bold;
+    color: #333; /* Couleur du texte pour les titres des publications */
+}
+.contact-info{
+    margin-top: 275px;
+}
+.info{
+    margin: 20px;
+    margin-top: 50px;
+
+}
+.fa-map-marker{
+    margin-top: 15px;
+}
+.fa-envelope{
+    margin-top: 15px;
+}
+.fa-mobile{
+    margin-top: 15px;
+}
+.fa-phone{
+    margin-top: 15px;
+}
